@@ -27,7 +27,7 @@ var u{e in E}, binary;
 var y{e in E} >= 0;
 
 /* Objective function 'z' */
-minimize z: sum{e in E} KSI[e]*y[e]+k[e]*u[e];
+minimize z: sum{e in E} (KSI[e]*y[e]+k[e]*u[e]);
 
 /* Constraints */
 s.t. c1{d in D} : h[d] == sum{p in P} x[d,p];
