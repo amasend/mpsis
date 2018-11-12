@@ -29,6 +29,6 @@ minimize z: sum{e in E} (KSI[e]*y[e]);
 
 /* Constraints */
 s.t. c1{d in D} : h[d] == sum{p in P} x[d,p];
-s.t. c2{e in E} : M*y[e] >= sum{d in D, p in P} LAM[e,d,p]*x[d,p];
+s.t. c2{e in E} : M/2*y[e] >= sum{d in D, p in P} LAM[e,d,p]*x[d,p];
 
 end;
