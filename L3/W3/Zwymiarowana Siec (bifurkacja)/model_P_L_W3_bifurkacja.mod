@@ -25,7 +25,7 @@ param KSI{e in E} >= 0;
 
 /* Decision variables */
 var x{d in D, p in P} >= 0;
-var y{e in E} >= 0;
+var y{e in E} integer >= 0;
 
 /* Objective function 'z' */
 minimize z: sum{e in E} (KSI[e]*y[e]);
