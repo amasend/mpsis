@@ -35,5 +35,6 @@ s.t. c1{d in D} : h[d] == sum{p in P} x[d,p];
 s.t. c2{e in E} : y[e] == sum{d in D, p in P} LAM[e,d,p]*h[d]*u[d,p];
 s.t. c3{d in D} : sum{p in P} u[d,p] == 1;
 s.t. c4{e in E} : c[e] >= sum{d in D, p in P} LAM[e,d,p]*x[d,p];
+s.t. c5{d in D, p in P} : x[d,p] <= W*u[d,p];
 
 end;
