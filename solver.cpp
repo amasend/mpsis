@@ -69,7 +69,7 @@ Czesc zmieniona, aby czytelniej wyswietlac wyniki. Wyniki czytane od gory do dol
 	printf("\nThe resulting sequence of results distribution:\n");
 	
 
-	FILE *f = fopen("file.txt", "w");
+	FILE *f = fopen("/home/shiny/file.txt", "w");
 	if (f == NULL)
 	{
 	    printf("Error opening file!\n");
