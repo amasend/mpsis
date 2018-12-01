@@ -67,10 +67,21 @@ int main( int argc, char *argv[] )
 Czesc zmieniona, aby czytelniej wyswietlac wyniki. Wyniki czytane od gory do dolu.
 */
 	printf("\nThe resulting sequence of results distribution:\n");
+	
+
+	FILE *f = fopen("file.txt", "w");
+	if (f == NULL)
+	{
+	    printf("Error opening file!\n");
+	    exit(1);
+	}
+	fprintf(f, "-1;%g\n", model.objectiveValue() );
 	for ( i = 0; i < columns_count; i++ )
 	{
 		printf( "x[%d] = %g\n", i + 1, column_primal[ i ] );
+		fprintf(f, "%d;%g\n", i + 1, column_primal[ i ] );
 	}
+	fclose(f);
 	printf("\n");
 	double *row_primal = model.primalRowSolution();
 	for ( i = rows_count; i > 0; i-- )

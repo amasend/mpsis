@@ -27,10 +27,10 @@ then
 	exit 1
 fi
 
-sudo mv ${TAR_FILENAME} /
+mv ${TAR_FILENAME} /
 cd /
-sudo tar -xjvpf ${TAR_FILENAME}
-sudo rm -f ${TAR_FILENAME}
+tar -xjvpf ${TAR_FILENAME}
+rm -f ${TAR_FILENAME}
 
 cd ~/
 echo "export LD_LIBRARY_PATH=/usr/local/lib" >> ~/.bashrc

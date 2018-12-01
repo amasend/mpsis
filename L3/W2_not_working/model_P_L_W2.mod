@@ -15,6 +15,7 @@ set D, default {1..D_count};
 /* Requirements */
 param h{d in D} >= 0;
 param LAM{e in E, d in D, p in P} >= 0, default 0;
+param W, default 100000;
 
 /* Capacity */
 param c{e in E} >= 0, default 15;
@@ -34,6 +35,6 @@ minimize z: sum{e in E} (KSI[e]*y[e]);
 s.t. c1{d in D} : h[d] == sum{p in P} x[d,p];
 s.t. c2{e in E} : y[e] == sum{d in D, p in P} LAM[e,d,p]*h[d]*u[d,p];
 s.t. c3{d in D} : sum{p in P} u[d,p] == 1;
-s.t. c4{e in E} : c[e] >= sum{d in D, p in P} LAM[e,d,p]*x[d,p];
-
+/*s.t. c4{e in E} : c[e] >= sum{d in D, p in P} LAM[e,d,p]*x[d,p];*/
+s.t. c5{d in D, p in P} : x[d,p] <= W*u[d,p];
 end;

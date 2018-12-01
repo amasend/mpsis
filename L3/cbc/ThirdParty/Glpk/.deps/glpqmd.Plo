@@ -1,0 +1,5 @@
+glpqmd.lo: glpk/src/glpqmd.c /usr/include/stdc-predef.h glpk/src/glpqmd.h
+
+/usr/include/stdc-predef.h:
+
+glpk/src/glpqmd.h:

@@ -1,0 +1,9 @@
+prefix=/usr/local
+libdir=/mpsis/L3/cbc/ThirdParty/Glpk
+
+Name: Glpk
+Description: Gnu Linear Programming Kit
+URL: https://projects.coin-or.org/BuildTools
+Version: 1.10.5
+Libs: ${libdir}/libcoinglpk.la -ldl -lm 
+Cflags: -I/mpsis/L3/cbc/ThirdParty/Glpk -I/mpsis/L3/cbc/ThirdParty/Glpk/glpk/src -I/mpsis/L3/cbc/ThirdParty/Glpk/glpk/src/amd

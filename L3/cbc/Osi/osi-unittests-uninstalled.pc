@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/mpsis/L3/cbc/Osi/src/OsiCommonTest
+
+Name: OsiUnitTests
+Description: COIN-OR Open Solver Interface Common Unit Tests
+URL: https://projects.coin-or.org/Osi
+Version: 0.107.9
+Libs: ${libdir}/libOsiCommonTests.la
+Cflags: -I/mpsis/L3/cbc/Osi/src/OsiCommonTest
+Requires: osi

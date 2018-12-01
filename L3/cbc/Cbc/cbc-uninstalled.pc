@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/mpsis/L3/cbc/Cbc/src
+
+Name: CBC
+Description: COIN-OR Branch and Cut
+URL: https://projects.coin-or.org/Cbc
+Version: 2.9.9
+Libs: ${libdir}/libCbcSolver.la ${libdir}/libCbc.la -lpthread -lrt 
+Cflags: -I/mpsis/L3/cbc/Cbc/src -I/mpsis/L3/cbc/Cbc/src
+Requires: osi-clp cgl osi coinutils 

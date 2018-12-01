@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/mpsis/L3/cbc/Osi/src/Osi
+
+Name: Osi
+Description: COIN-OR Open Solver Interface
+URL: https://projects.coin-or.org/Osi
+Version: 0.107.9
+Libs: ${libdir}/libOsi.la 
+Cflags: -I/mpsis/L3/cbc/Osi/src/Osi -I/mpsis/L3/cbc/Osi/src/Osi
+Requires: coinutils 

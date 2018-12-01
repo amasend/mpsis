@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/mpsis/L3/cbc/Clp/src/OsiClp
+
+Name: OsiClp
+Description: COIN-OR Open Solver Interface for CLP
+URL: https://projects.coin-or.org/Osi
+Version: 1.16.11
+Libs: ${libdir}/libOsiClp.la 
+Cflags: -I/mpsis/L3/cbc/Clp/src/OsiClp
+Requires: clp osi 

@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/mpsis/L3/cbc/Cgl/src
+
+Name: CGL
+Description: COIN-OR Cut Generation Library
+URL: https://projects.coin-or.org/Cgl
+Version: 0.59.10
+Libs: ${libdir}/libCgl.la 
+Cflags: -I/mpsis/L3/cbc/Cgl/src -I/mpsis/L3/cbc/Cgl/src/CglAllDifferent -I/mpsis/L3/cbc/Cgl/src/CglClique -I/mpsis/L3/cbc/Cgl/src/CglDuplicateRow -I/mpsis/L3/cbc/Cgl/src/CglFlowCover -I/mpsis/L3/cbc/Cgl/src/CglGMI -I/mpsis/L3/cbc/Cgl/src/CglGomory -I/mpsis/L3/cbc/Cgl/src/CglKnapsackCover -I/mpsis/L3/cbc/Cgl/src/CglLandP -I/mpsis/L3/cbc/Cgl/src/CglLiftAndProject -I/mpsis/L3/cbc/Cgl/src/CglMixedIntegerRounding -I/mpsis/L3/cbc/Cgl/src/CglMixedIntegerRounding2 -I/mpsis/L3/cbc/Cgl/src/CglOddHole -I/mpsis/L3/cbc/Cgl/src/CglPreProcess -I/mpsis/L3/cbc/Cgl/src/CglProbing -I/mpsis/L3/cbc/Cgl/src/CglRedSplit -I/mpsis/L3/cbc/Cgl/src/CglRedSplit2 -I/mpsis/L3/cbc/Cgl/src/CglResidualCapacity -I/mpsis/L3/cbc/Cgl/src/CglSimpleRounding -I/mpsis/L3/cbc/Cgl/src/CglTwomir -I/mpsis/L3/cbc/Cgl/src/CglZeroHalf -I/mpsis/L3/cbc/Cgl/src
+Requires: osi-clp osi coinutils 

@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/mpsis/L3/cbc/CoinUtils/src
+
+Name: CoinUtils
+Description: COIN-OR Utilities
+URL: https://projects.coin-or.org/CoinUtils
+Version: 2.10.14
+Libs: ${libdir}/libCoinUtils.la -lm 
+Cflags: -I/mpsis/L3/cbc/CoinUtils/src -I/mpsis/L3/cbc/CoinUtils/src
+Requires: coinglpk 

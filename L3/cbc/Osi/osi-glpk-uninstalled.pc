@@ -1,0 +1,10 @@
+prefix=/usr/local
+libdir=/mpsis/L3/cbc/Osi/src/OsiGlpk
+
+Name: OsiGlpk
+Description: COIN-OR Open Solver Interface for GLPK
+URL: https://projects.coin-or.org/Osi
+Version: 0.107.9
+Libs: ${libdir}/libOsiGlpk.la  
+Cflags: -I/mpsis/L3/cbc/Osi/src/OsiGlpk
+Requires: osi  coinglpk 
